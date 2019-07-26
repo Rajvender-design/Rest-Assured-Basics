@@ -1,0 +1,6 @@
+apitests/DeleteRequest.class
+mytest/Mytests.class
+apitests/PutRequest.class
+apitests/Postrequest.class
+apitests/RestUtils.class
+apitests/StatusCode.class

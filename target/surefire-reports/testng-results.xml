@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-07-21T13:27:26Z" name="Suite" finished-at="2019-07-21T13:27:32Z" duration-ms="5712">
+    <groups>
+    </groups>
+    <test started-at="2019-07-21T13:27:26Z" name="Test" finished-at="2019-07-21T13:27:32Z" duration-ms="5712">
+      <class name="apitests.PutRequest">
+        <test-method signature="putTest()[pri:0, instance:apitests.PutRequest@6c6cb480]" started-at="2019-07-21T13:27:31Z" name="putTest" finished-at="2019-07-21T13:27:32Z" duration-ms="1188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putTest -->
+        <test-method is-config="true" signature="PutData()[pri:0, instance:apitests.PutRequest@6c6cb480]" started-at="2019-07-21T13:27:31Z" name="PutData" finished-at="2019-07-21T13:27:31Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PutData -->
+      </class> <!-- apitests.PutRequest -->
+      <class name="apitests.DeleteRequest">
+        <test-method signature="putTest()[pri:0, instance:apitests.DeleteRequest@408d971b]" started-at="2019-07-21T13:27:30Z" name="putTest" finished-at="2019-07-21T13:27:31Z" duration-ms="1169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putTest -->
+      </class> <!-- apitests.DeleteRequest -->
+      <class name="mytest.Mytests">
+        <test-method signature="Test1()[pri:0, instance:mytest.Mytests@3c46e67a]" started-at="2019-07-21T13:27:32Z" name="Test1" finished-at="2019-07-21T13:27:32Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method signature="Test2()[pri:0, instance:mytest.Mytests@3c46e67a]" started-at="2019-07-21T13:27:32Z" name="Test2" finished-at="2019-07-21T13:27:32Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+      </class> <!-- mytest.Mytests -->
+      <class name="apitests.Postrequest">
+        <test-method is-config="true" signature="postvalidation()[pri:0, instance:apitests.Postrequest@557caf28]" started-at="2019-07-21T13:27:26Z" name="postvalidation" finished-at="2019-07-21T13:27:27Z" duration-ms="562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postvalidation -->
+        <test-method signature="Testpost()[pri:0, instance:apitests.Postrequest@557caf28]" started-at="2019-07-21T13:27:27Z" name="Testpost" finished-at="2019-07-21T13:27:30Z" duration-ms="2773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testpost -->
+      </class> <!-- apitests.Postrequest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

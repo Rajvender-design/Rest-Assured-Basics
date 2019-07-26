@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="apitests.basic_validations">
+        <methods>
+          <include name="test_logging"/>
+          <include name="test_singlecontent"/>
+          <include name="test_multiplecontent"/>
+          <include name="setparameterandheader"/>
+        </methods>
+      </class> <!-- apitests.basic_validations -->
+      <class name="mytest.Mytests">
+        <methods>
+          <include name="Test1"/>
+        </methods>
+      </class> <!-- mytest.Mytests -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
