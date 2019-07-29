@@ -10,17 +10,14 @@
   <name>APIAutomation</name>
   <url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-   
-    <maven.compiler.source>1.6</maven.compiler.source>
-    <maven.compiler.target>1.6</maven.compiler.target>
-
-  </properties>
-<build>
+  <profiles>
+  <profile>
+  <id>Regression</id>
+  
+  <build>
     <pluginManagement>
       <plugins>
-        <plugin>
+      <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.1</version>
@@ -55,7 +52,53 @@
       </plugins>
     </pluginManagement>
   </build>
+  </profile>
+  <profile>
+  <id>smoke</id>
   
+  <build>
+    <pluginManagement>
+      <plugins>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.1</version>
+          <configuration>
+            <source>1.6</source>
+            <target>1.6</target>
+          </configuration>
+        </plugin>
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M3</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+      <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <version>3.1.0</version>
+            <executions>
+              <execution>
+                <id>attach-sources</id>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+  </profile>
+  
+  </profiles>
+ 
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -118,7 +161,5 @@
     <version>2.0.0.0</version>
     <scope>test</scope>
 </dependency>
-
-
-  </dependencies>
+ </dependencies>
 </project>

@@ -15,7 +15,7 @@ public class Mytests {
 	public void Test1() {
 	
 		
-		AssertJUnit.assertEquals(false, false);
+		AssertJUnit.assertEquals(false, true);
 		
 	}
 @Test

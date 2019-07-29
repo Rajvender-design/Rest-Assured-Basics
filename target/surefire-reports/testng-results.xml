@@ -1,47 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-07-21T13:27:26Z" name="Suite" finished-at="2019-07-21T13:27:32Z" duration-ms="5712">
+  <suite started-at="2019-07-28T06:13:32Z" name="Suite" finished-at="2019-07-28T06:13:39Z" duration-ms="6157">
     <groups>
     </groups>
-    <test started-at="2019-07-21T13:27:26Z" name="Test" finished-at="2019-07-21T13:27:32Z" duration-ms="5712">
+    <test started-at="2019-07-28T06:13:32Z" name="Test" finished-at="2019-07-28T06:13:39Z" duration-ms="6157">
       <class name="apitests.PutRequest">
-        <test-method signature="putTest()[pri:0, instance:apitests.PutRequest@6c6cb480]" started-at="2019-07-21T13:27:31Z" name="putTest" finished-at="2019-07-21T13:27:32Z" duration-ms="1188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- putTest -->
-        <test-method is-config="true" signature="PutData()[pri:0, instance:apitests.PutRequest@6c6cb480]" started-at="2019-07-21T13:27:31Z" name="PutData" finished-at="2019-07-21T13:27:31Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="PutData()[pri:0, instance:apitests.PutRequest@7c7a06ec]" started-at="2019-07-28T06:13:38Z" name="PutData" finished-at="2019-07-28T06:13:38Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PutData -->
+        <test-method signature="putTest()[pri:0, instance:apitests.PutRequest@7c7a06ec]" started-at="2019-07-28T06:13:38Z" name="putTest" finished-at="2019-07-28T06:13:39Z" duration-ms="759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putTest -->
       </class> <!-- apitests.PutRequest -->
       <class name="apitests.DeleteRequest">
-        <test-method signature="putTest()[pri:0, instance:apitests.DeleteRequest@408d971b]" started-at="2019-07-21T13:27:30Z" name="putTest" finished-at="2019-07-21T13:27:31Z" duration-ms="1169" status="PASS">
+        <test-method signature="putTest()[pri:0, instance:apitests.DeleteRequest@1d296da]" started-at="2019-07-28T06:13:37Z" name="putTest" finished-at="2019-07-28T06:13:38Z" duration-ms="1274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- putTest -->
       </class> <!-- apitests.DeleteRequest -->
-      <class name="mytest.Mytests">
-        <test-method signature="Test1()[pri:0, instance:mytest.Mytests@3c46e67a]" started-at="2019-07-21T13:27:32Z" name="Test1" finished-at="2019-07-21T13:27:32Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test1 -->
-        <test-method signature="Test2()[pri:0, instance:mytest.Mytests@3c46e67a]" started-at="2019-07-21T13:27:32Z" name="Test2" finished-at="2019-07-21T13:27:32Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test2 -->
-      </class> <!-- mytest.Mytests -->
       <class name="apitests.Postrequest">
-        <test-method is-config="true" signature="postvalidation()[pri:0, instance:apitests.Postrequest@557caf28]" started-at="2019-07-21T13:27:26Z" name="postvalidation" finished-at="2019-07-21T13:27:27Z" duration-ms="562" status="PASS">
+        <test-method is-config="true" signature="postvalidation()[pri:0, instance:apitests.Postrequest@776aec5c]" started-at="2019-07-28T06:13:32Z" name="postvalidation" finished-at="2019-07-28T06:13:33Z" duration-ms="1034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postvalidation -->
-        <test-method signature="Testpost()[pri:0, instance:apitests.Postrequest@557caf28]" started-at="2019-07-21T13:27:27Z" name="Testpost" finished-at="2019-07-21T13:27:30Z" duration-ms="2773" status="PASS">
+        <test-method signature="Testpost()[pri:0, instance:apitests.Postrequest@776aec5c]" started-at="2019-07-28T06:13:34Z" name="Testpost" finished-at="2019-07-28T06:13:37Z" duration-ms="3042" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Testpost -->
       </class> <!-- apitests.Postrequest -->
+      <class name="mytest.Mytests">
+        <test-method signature="Test1()[pri:0, instance:mytest.Mytests@75d4a5c2]" started-at="2019-07-28T06:13:39Z" name="Test1" finished-at="2019-07-28T06:13:39Z" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<false> but was:<true>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
+at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+at org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:364)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:80)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:185)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:192)
+at mytest.Mytests.Test1(Mytests.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method signature="Test2()[pri:0, instance:mytest.Mytests@75d4a5c2]" started-at="2019-07-28T06:13:39Z" name="Test2" finished-at="2019-07-28T06:13:39Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+      </class> <!-- mytest.Mytests -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
